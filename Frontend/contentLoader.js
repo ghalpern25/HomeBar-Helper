@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 //Fetch the list of recipes from the server
 export async function fetchRecipes() {
-  const response = await fetch('http://localhost:3000/recipes');
+  const response = await fetch('http://192.168.50.54:5000/check_recipes');
   if (!response.ok) {
     throw new Error('Network response was not ok');
   }
@@ -24,7 +24,7 @@ export function displayRecipes(recipes) {
 
   recipes.forEach(recipe => {
     const recipeItem = document.createElement('div');
-    recipeItem.className = 'recipe-item';
+    recipeItem.className = 'recipe-item'; 
     recipeItem.innerHTML = `
       <h3>${recipe.title}</h3>
       <ul>
