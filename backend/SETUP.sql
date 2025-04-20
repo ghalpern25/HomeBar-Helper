@@ -106,7 +106,13 @@ INSERT INTO recipes (name, instructions) VALUES
 ('White Russian', 'Build in glass over ice and stir.'),
 ('Whiskey Sour', 'Shake all ingredients with ice, strain into a rocks glass, and garnish with a cherry.');
 
-INSERT INTO recipes (name, instructions) VALUES
-('Classic Margarita', 'Shake all ingredients with ice and strain into a salt-rimmed glass.'),
-('White Russian', 'Build in glass over ice and stir.'),
-('Whiskey Sour', 'Shake all ingredients with ice, strain into a rocks glass, and garnish with a cherry.');
+INSERT INTO recipe_ingredients (recipe_id, ingredient_id, quantity, unit_id) VALUES
+(1, 5, 2, 1),  -- Tequila
+(1, 1, 1, 1),  -- Triple Sec
+(1, 22, 1, 1), -- Lime Juice
+(2, 12, 2, 1), -- Vodka
+(2, 4, 1, 1),  -- Kahlua
+(2, 25, 3, 1), -- Milk
+(3, 6, 2, 1),  -- Bourbon
+(3, 20, 1.5, 1), -- Lemon Juice
+(3, 27, .75, 1); -- Simple Syrup
